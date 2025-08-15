@@ -1,0 +1,12 @@
+[package]
+name = "mongo-polars-scaffold"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mongodb = "3.2.1"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+futures = "0.3.31"
+polars = { version = "0.48.1", features = ["lazy", "json", "strings", "regex"] }
+serde_json = "1.0"
